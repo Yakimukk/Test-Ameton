@@ -1,0 +1,648 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "MuseoSansCyrl-300";
+  src: url("../assets/font/museosanscyrl-300.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../assets/font/museosanscyrl-300.eot?#iefix") format("embedded-opentype"), url("../assets/font/museosanscyrl-300.woff2") format("woff2"), url("../assets/font/museosanscyrl-300.woff") format("woff"), url("../assets/font/museosanscyrl-300.ttf") format("truetype"), url("../assets/font/museosanscyrl-300.svg#museosanscyrl-300") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "MuseoSansCyrl-700";
+  src: url("../assets/font/museosanscyrl-700.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../assets/font/museosanscyrl-700.eot?#iefix") format("embedded-opentype"), url("../assets/font/museosanscyrl-700.woff2") format("woff2"), url("../assets/font/museosanscyrl-700.woff") format("woff"), url("../assets/font/museosanscyrl-700.ttf") format("truetype"), url("../assets/font/museosanscyrl-700.svg#museosanscyrl-700") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+  font-family: "MuseoSansCyrl-900";
+  src: url("../assets/font/museosanscyrl-900.eot");
+  /* IE 9 Compatibility Mode */
+  src: url("../assets/font/museosanscyrl-900.eot?#iefix") format("embedded-opentype"), url("../assets/font/museosanscyrl-900.woff2") format("woff2"), url("../assets/font/museosanscyrl-900.woff") format("woff"), url("../assets/font/museosanscyrl-900.ttf") format("truetype"), url("../assets/font/museosanscyrl-900.svg#museosanscyrl-300") format("svg");
+  /* Chrome < 4, Legacy iOS */
+}
+body {
+  font-family: "MuseoSansCyrl-300", sans-serif;
+  font-weight: 400;
+  background-color: #fff;
+}
+
+img {
+  max-width: 100%;
+}
+
+.link {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  max-width: 1280px;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.support-container {
+  overflow: hidden;
+  position: relative;
+  margin-top: 40px;
+  margin-bottom: 82px;
+  background: #93BBEA;
+  border-radius: 40px;
+  height: 306px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.support-container .support-design-one {
+  position: absolute;
+  top: 12%;
+  left: 0%;
+  z-index: 1;
+}
+.support-container .support-design-two {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  z-index: 1;
+}
+.support-container .support-title {
+  font-family: "MuseoSansCyrl-900";
+  padding-top: 40px;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+.support-container .support-text {
+  padding-top: 4px;
+  font-size: 17px;
+  line-height: 140%;
+  color: #fff;
+  text-align: center;
+  z-index: 3;
+}
+.support-container .support-buttons {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+  z-index: 3;
+}
+.support-container .support-buttons .support-button {
+  width: 160px;
+  height: 48px;
+  background-color: #fff;
+  border-radius: 12px;
+  border: none;
+  font-size: 15px;
+  line-height: 120%;
+  font-weight: 600;
+  color: #1A1A1A;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  cursor: pointer;
+}
+.support-container .support-buttons .support-button:hover {
+  color: #5992E8;
+}
+
+.subscribe-container {
+  position: relative;
+  height: 166px;
+  background: #fff;
+  -webkit-box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
+          box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
+  border-radius: 40px;
+  margin: 0 102px;
+  padding: 0 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.subscribe-container .subscribe-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 16px;
+}
+.subscribe-container .subscribe-p {
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+}
+.subscribe-container .subscribe-title {
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #1A1A1A;
+}
+.subscribe-container .subscribe-social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 14px;
+}
+.subscribe-container .subscribe-social-item .social-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 10px;
+  background-color: #F9F9F9;
+}
+.subscribe-container .subscribe-social-item .social-item:hover {
+  -webkit-filter: saturate(0.2);
+          filter: saturate(0.2);
+}
+
+.FAQ-container {
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+}
+.FAQ-container .FAQ-card-arrow {
+  position: absolute;
+  top: 56%;
+  right: 0;
+  width: 44px;
+  height: 44px;
+  -webkit-box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+          box-shadow: 0px 1px 7px rgba(0, 0, 0, 0.09);
+  border-radius: 50%;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.FAQ-container .FAQ-card-arrow-prev {
+  background: #fff url("../assets/svg/arrow.svg") center no-repeat;
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
+  left: 0%;
+}
+.FAQ-container .FAQ-card-arrow-next {
+  background: #fff url("../assets/svg/arrow.svg") center no-repeat;
+  right: 0%;
+}
+.FAQ-container .FAQ-title {
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #1A1A1A;
+  text-align: center;
+}
+.FAQ-container .FAQ-cards {
+  padding-top: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 24px;
+}
+.FAQ-container .FAQ-cards .FAQ-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 16px;
+  cursor: pointer;
+  min-width: 282px;
+  max-width: 282px;
+  height: 160px;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+}
+.FAQ-container .FAQ-cards .FAQ-card .card-text {
+  text-align: left;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 100%;
+          flex: 1 1 100%;
+  padding-right: 10px;
+}
+.FAQ-container .FAQ-cards .FAQ-card .card-text .card-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1A1A1A;
+  margin-bottom: 8px;
+}
+.FAQ-container .FAQ-cards .FAQ-card .card-text .card-subtitle {
+  font-size: 15px;
+  line-height: 140%;
+  color: #949494;
+}
+.FAQ-container .FAQ-cards .FAQ-card .card-picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 42%;
+          flex: 0 1 42%;
+  margin-left: auto;
+}
+
+.help-container {
+  margin: 0 102px;
+  padding-bottom: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.help-container .help-title {
+  font-family: "MuseoSansCyrl-700";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  color: #1A1A1A;
+  text-align: center;
+}
+.help-container .info-blocks {
+  padding-top: 32px;
+  width: 100%;
+  margin: 0 102px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 12px;
+}
+.help-container .info-blocks .info-block {
+  padding: 20px 24px;
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+          box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+.help-container .info-blocks .info-block .info-block-title {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 120%;
+  color: #1A1A1A;
+}
+.help-container .info-blocks .info-block .info-block-subtitle {
+  padding-top: 4px;
+  font-size: 13px;
+  line-height: 140%;
+  color: #949494;
+}
+.help-container .info-blocks .info-block-one {
+  height: 64px;
+}
+.help-container .info-blocks .info-block-two {
+  height: 104px;
+}
+.help-container .info-blocks .info-block-three {
+  height: 64px;
+}
+.help-container .info-blocks .info-block-four {
+  height: 104px;
+}
+
+.support-two {
+  padding-top: 22px;
+}
+.support-two .support-delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  gap: 15px;
+}
+.support-two .support-title-delivery {
+  font-family: "MuseoSansCyrl-900";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 120%;
+  color: #1A1A1A;
+}
+.support-two .support-content-delivery {
+  padding-top: 16px;
+  width: 56%;
+}
+.support-two .support-content-delivery .support-text-delivery {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 140%;
+  color: #1A1A1A;
+}
+.support-two .support-contact-delivery {
+  padding-top: 40px;
+}
+.support-two .support-contact-delivery .support-info-delivery {
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 120%;
+  color: #1A1A1A;
+}
+.support-two .support-buttons-delivery {
+  padding-top: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 8px;
+}
+.support-two .support-buttons-delivery .support-button-delivery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 8px;
+  width: 224px;
+  height: 48px;
+  background-color: #36BA5F;
+  border: none;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 120%;
+  color: #fff;
+}
+.support-two .support-buttons-delivery .support-items-delivery {
+  background: #F9F9F9;
+  border-radius: 12px;
+  width: 48px;
+  height: 48px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (max-width: 1140px) {
+  .subscribe-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 5px;
+  }
+  .subscribe-container .subscribe-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+}
+@media (max-width: 780px) {
+  .FAQ-container .FAQ-title,
+.help-container .help-title {
+    font-size: 30px;
+  }
+
+  .FAQ-container .FAQ-cards .FAQ-card {
+    max-width: 230px;
+    min-width: 230px;
+  }
+
+  .support-container .support-design-two {
+    width: 200px;
+  }
+  .support-container .support-title {
+    font-size: 40px;
+  }
+  .support-container .support-buttons {
+    padding-top: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .support-container .support-buttons .support-button {
+    width: 45%;
+  }
+  .support-container .support-text {
+    padding: 0 5px;
+    font-size: 15px;
+  }
+  .support-container br {
+    display: none;
+  }
+
+  .subscribe-container {
+    margin: 0 20px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 10px;
+  }
+  .subscribe-container .subscribe-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
+  }
+  .subscribe-container .subscribe-title {
+    font-size: 30px;
+    line-height: 120%;
+    color: #1A1A1A;
+  }
+  .subscribe-container .subscribe-social-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    gap: 5px;
+  }
+  .subscribe-container .subscribe-social-item .social-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 30%;
+    height: 56px;
+    border-radius: 10px;
+    background-color: #F9F9F9;
+  }
+
+  .help-container {
+    margin: 0 42px;
+  }
+  .help-container br {
+    display: none;
+  }
+  .help-container .info-blocks .info-block .info-block-text {
+    width: 80%;
+  }
+  .help-container .info-blocks .info-block .info-block-title {
+    font-size: 15px;
+  }
+  .help-container .info-blocks .info-block .info-block-subtitle {
+    display: none;
+  }
+}
+@media (max-width: 450px) {
+  .support-container .support-design-one {
+    width: 200px;
+  }
+  .support-container .support-title {
+    font-size: 35px;
+  }
+
+  .FAQ-container .FAQ-title,
+.help-container .help-title,
+.subscribe-container .subscribe-title {
+    font-size: 25px;
+  }
+
+  .subscribe-container .subscribe-p {
+    text-align: center;
+  }
+
+  .FAQ-container .FAQ-cards .FAQ-card .card-text .card-title {
+    font-size: 15px;
+  }
+  .FAQ-container .FAQ-cards .FAQ-card .card-text .card-subtitle {
+    font-style: 11px;
+  }
+}
+@media (max-width: 390px) {
+  .support-container {
+    height: 356px;
+  }
+}
