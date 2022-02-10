@@ -110,10 +110,10 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
   z-index: 3;
 }
 .support-container .support-buttons .support-button {
+  margin: 0 4px;
   width: 160px;
   height: 48px;
   background-color: #fff;
@@ -147,7 +147,7 @@ li {
           box-shadow: 0px 20px 60px rgba(26, 26, 26, 0.05);
   border-radius: 40px;
   margin: 0 102px;
-  padding: 0 40px;
+  padding: 0 33px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -159,6 +159,7 @@ li {
           justify-content: space-between;
 }
 .subscribe-container .subscribe-text {
+  padding-left: 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -166,7 +167,6 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 16px;
 }
 .subscribe-container .subscribe-p {
   font-weight: 600;
@@ -174,6 +174,7 @@ li {
   line-height: 120%;
 }
 .subscribe-container .subscribe-title {
+  padding-top: 16px;
   font-family: "MuseoSansCyrl-700";
   font-weight: 700;
   font-size: 40px;
@@ -187,9 +188,9 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 14px;
 }
 .subscribe-container .subscribe-social-item .social-item {
+  margin: 0 7px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -214,9 +215,9 @@ li {
   overflow: hidden;
   padding: 80px 0;
 }
-.FAQ-container .FAQ-card-arrow {
+.FAQ-container .swiper-button {
   position: absolute;
-  top: 56%;
+  top: 55%;
   right: 0;
   width: 44px;
   height: 44px;
@@ -233,14 +234,6 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-}
-.FAQ-container .FAQ-card-arrow-prev {
-  background: #fff url("../assets/svg/arrow.svg") center no-repeat;
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  left: 0%;
-}
-.FAQ-container .FAQ-card-arrow-next {
   background: #fff url("../assets/svg/arrow.svg") center no-repeat;
   right: 0%;
 }
@@ -257,7 +250,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 24px;
 }
 .FAQ-container .FAQ-cards .FAQ-card {
   display: -webkit-box;
@@ -331,7 +323,7 @@ li {
   text-align: center;
 }
 .help-container .info-blocks {
-  padding-top: 32px;
+  padding-top: 26px;
   width: 100%;
   margin: 0 102px;
   display: -webkit-box;
@@ -341,9 +333,9 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  gap: 12px;
 }
 .help-container .info-blocks .info-block {
+  margin: 6px 0;
   padding: 20px 24px;
   background: #fff;
   -webkit-box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.05);
@@ -398,7 +390,6 @@ li {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: start;
-  gap: 15px;
 }
 .support-two .support-title-delivery {
   font-family: "MuseoSansCyrl-900";
@@ -406,6 +397,7 @@ li {
   font-size: 24px;
   line-height: 120%;
   color: #1A1A1A;
+  padding-right: 15px;
 }
 .support-two .support-content-delivery {
   padding-top: 16px;
@@ -431,7 +423,6 @@ li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 8px;
 }
 .support-two .support-buttons-delivery .support-button-delivery {
   display: -webkit-box;
@@ -440,10 +431,11 @@ li {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 56px;
+  margin-right: 8px;
   width: 224px;
   height: 48px;
   background-color: #36BA5F;
@@ -455,6 +447,7 @@ li {
   color: #fff;
 }
 .support-two .support-buttons-delivery .support-items-delivery {
+  margin-right: 8px;
   background: #F9F9F9;
   border-radius: 12px;
   width: 48px;
@@ -485,7 +478,6 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 5px;
   }
   .subscribe-container .subscribe-text {
     display: -webkit-box;
@@ -498,7 +490,6 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 5px;
   }
 }
 @media (max-width: 780px) {
@@ -528,6 +519,7 @@ li {
   }
   .support-container .support-buttons .support-button {
     width: 45%;
+    margin-bottom: 10px;
   }
   .support-container .support-text {
     padding: 0 5px;
@@ -553,7 +545,6 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    gap: 10px;
   }
   .subscribe-container .subscribe-text {
     display: -webkit-box;
@@ -566,7 +557,6 @@ li {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    gap: 5px;
   }
   .subscribe-container .subscribe-title {
     font-size: 30px;
@@ -582,9 +572,9 @@ li {
             align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    gap: 5px;
   }
   .subscribe-container .subscribe-social-item .social-item {
+    margin-bottom: 5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -594,7 +584,7 @@ li {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 30%;
+    width: 25%;
     height: 56px;
     border-radius: 10px;
     background-color: #F9F9F9;
@@ -614,6 +604,10 @@ li {
   }
   .help-container .info-blocks .info-block .info-block-subtitle {
     display: none;
+  }
+
+  .support-two .support-content-delivery {
+    width: 100%;
   }
 }
 @media (max-width: 450px) {
@@ -639,6 +633,10 @@ li {
   }
   .FAQ-container .FAQ-cards .FAQ-card .card-text .card-subtitle {
     font-style: 11px;
+  }
+
+  .support-two .support-buttons-delivery .support-button-delivery {
+    padding: 0 40px;
   }
 }
 @media (max-width: 390px) {
