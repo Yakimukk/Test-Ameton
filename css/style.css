@@ -132,8 +132,10 @@ li {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  gap: 8px;
   cursor: pointer;
+}
+.support-container .support-buttons .support-button img {
+  padding-right: 8px;
 }
 .support-container .support-buttons .support-button:hover {
   color: #5992E8;
@@ -611,6 +613,9 @@ li {
   }
 }
 @media (max-width: 450px) {
+  .support-container {
+    height: 356px;
+  }
   .support-container .support-design-one {
     width: 200px;
   }
@@ -637,10 +642,5 @@ li {
 
   .support-two .support-buttons-delivery .support-button-delivery {
     padding: 0 40px;
-  }
-}
-@media (max-width: 390px) {
-  .support-container {
-    height: 356px;
   }
 }
